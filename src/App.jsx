@@ -6,21 +6,14 @@ function App() {
   useEffect(() => {
     setInterval(() => {
       setDate(new Date());
-    }, 1000)
+    }, 1000);
   });
 
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <div className={styles.cardTime}>
-          <p>Hours</p>
-        </div>
-        {date.toLocaleTimeString()}
-        <div className={styles.cardTime}>
-          <p>Minutes</p>
-        </div>
-        <div className={styles.cardTime}>
-          <p>Seconds</p>
+        <div className={styles.hourCard}>
+          <h1 className={styles.h1}>{date.toLocaleTimeString()}</h1>
         </div>
       </div>
       <div className={styles.montaniaContainer}>

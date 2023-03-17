@@ -26,3 +26,12 @@ p {
   align-items: center;
   justify-content: center;
 }
+h1 {
+  color: #fff;
+  font-size: 4rem;
+  text-align: center;
+}
+.hourCard {
+  background-color: hsla(235, 18%, 12%, 0.76);
+  width: 80%;
+}
