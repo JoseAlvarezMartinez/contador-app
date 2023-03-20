@@ -11,6 +11,7 @@
   width: 1.5rem;
   border-radius: 0.2rem;
   cursor: pointer;
+  background-color: #f7f7f7;
 }
 .modal h2 {
   color: #fff;

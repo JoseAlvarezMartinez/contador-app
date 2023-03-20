@@ -6,14 +6,20 @@ const Modal = ({ setModal }) => {
   const [Segundos] = useCounter("Seconds");
   return (
     <div className={styles.modal}>
-      <div onClick={() => setModal(false)} className={styles.closeBtn}>
-        X
+      <div className={styles.closeBtnContainer}>
+        <div onClick={() => setModal(false)} className={styles.closeBtn}>
+          X
+        </div>
       </div>
-      <div className={styles.modalContainer}>
+      <div className={styles.container}>
         <div className={styles.modalBackground}>
           <Horas />
           <Minutos />
           <Segundos />
+        </div>
+
+        <div>
+          <button className={styles.startBtn}>Start</button>
         </div>
       </div>
     </div>
