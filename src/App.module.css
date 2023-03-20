@@ -36,3 +36,13 @@ h1 {
   background-color: hsla(235, 18%, 12%, 0.76);
   width: 80%;
 }
+.addBtn{
+  height: 2rem;
+  width: 2rem;
+  background: red;
+  position: relative;
+  bottom: 2rem;
+  left: 25rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
