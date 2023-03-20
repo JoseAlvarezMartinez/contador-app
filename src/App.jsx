@@ -1,19 +1,18 @@
 import styles from "./App.module.css";
 import Montania from "./assets/pattern-hills.svg";
 import { useEffect, useState } from "react";
+import Modal from "./components/Modal";
 function App() {
+  const [modal, setModal] = useState(false);
   const [date, setDate] = useState(new Date());
   const [cronometro, setCronometro] = useState(0);
+
   useEffect(() => {
     setInterval(() => {
       setDate(new Date());
     }, 1000);
   });
-  useEffect(() => {
-    if (cronometro > 1) {
-      alert("funca");
-    }
-  }, [cronometro]);
+
   return (
     <header className={styles.header}>
       <div className={styles.container}>
@@ -33,9 +32,10 @@ function App() {
           alt="Imagen de la Montania"
         />
       </div>
-      <div className={styles.addBtn}>
-        <p onClick={() => setCronometro(10)}>+</p>
+      <div onClick={() => setModal(true)} className={styles.addBtn}>
+        <p>+</p>
       </div>
+      {modal && <Modal setModal={setModal}/>}
     </header>
   );
 }
