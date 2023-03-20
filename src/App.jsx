@@ -1,7 +1,7 @@
 import styles from "./App.module.css";
 import Montania from "./assets/pattern-hills.svg";
 import { useEffect, useState } from "react";
-import Modal from "./components/Modal";
+
 function App() {
   const [tiempoInicial, setTiempoInicial] = useState(3600);
   const [tiempoActual, setTiempoActual] = useState(tiempoInicial);
