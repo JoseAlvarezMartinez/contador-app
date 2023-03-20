@@ -3,10 +3,9 @@ import Montania from "./assets/pattern-hills.svg";
 import { useEffect, useState } from "react";
 import Modal from "./components/Modal";
 function App() {
-  const [modal, setModal] = useState(false);
   const [date, setDate] = useState(new Date());
   const [cronometro, setCronometro] = useState(0);
-
+  const [modal, setModal] = useState(false);
   useEffect(() => {
     setInterval(() => {
       setDate(new Date());

@@ -20,3 +20,15 @@
 
   cursor: pointer;
 }
+
+.modalContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.modalBackground {
+  background-color: black;
+  padding: 4rem 2rem;
+  display: flex;
+}
