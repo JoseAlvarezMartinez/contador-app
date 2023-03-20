@@ -1,9 +1,18 @@
 import styles from "./Modal.module.css";
 import useCounter from "../hooks/useCounter";
-const Modal = ({ setModal }) => {
-  const [Horas] = useCounter("Hours");
-  const [Minutos] = useCounter("Minutes");
-  const [Segundos] = useCounter("Seconds");
+import { useEffect } from "react";
+const Modal = ({ setModal, setCronometro }) => {
+  const [Horas, horas] = useCounter("Hours");
+  const [Minutos, minutos] = useCounter("Minutes");
+  const [Segundos, segundos] = useCounter("Seconds");
+
+  useEffect(() => {
+    setCronometro({
+      horas,
+      minutos,
+      segundos,
+    });
+  }, [horas, minutos, segundos]);
   return (
     <div className={styles.modal}>
       <div className={styles.closeBtnContainer}>
@@ -18,9 +27,9 @@ const Modal = ({ setModal }) => {
           <Segundos />
         </div>
 
-        <div>
-          <button className={styles.startBtn}>Start</button>
-        </div>
+        <button onClick={() => setModal(false)} className={styles.startBtn}>
+          Start
+        </button>
       </div>
     </div>
   );

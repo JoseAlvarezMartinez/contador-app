@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Modal from "./components/Modal";
 function App() {
   const [date, setDate] = useState(new Date());
-  const [cronometro, setCronometro] = useState(0);
+  const [cronometro, setCronometro] = useState({horas:0,minutos:0,segundos:0});
   const [modal, setModal] = useState(false);
   useEffect(() => {
     setInterval(() => {
@@ -36,7 +36,7 @@ function App() {
           +
         </div>
       </div>
-      {modal && <Modal setModal={setModal} />}
+      {modal && <Modal setModal={setModal} setCronometro={setCronometro}/>}
     </header>
   );
 }

@@ -3,7 +3,6 @@ import styles from "./useCounter.module.css";
 
 const useCounter = (titulo) => {
   const [state, setState] = useState(0);
-
   const Contador = () => (
     <div className={styles.modal}>
       <h2>{titulo}</h2>
@@ -14,7 +13,7 @@ const useCounter = (titulo) => {
       </div>
     </div>
   );
-  return [Contador];
+  return [Contador, state];
 };
 
 export default useCounter;
