@@ -1,12 +1,12 @@
 import { useState } from "react";
-
-const useCounter = (contador) => {
-  const [probando, setProbando] = useState(0);
+import styles from "./useCounter.module.css";
+const useCounter = () => {
+  const [state, setState] = useState(0);
   const Contador = () => (
     <div>
-      <button> - </button>
-      <p>{contador}</p>
-      <button> + </button>
+      <button onClick={() => setState(state - 1)}> - </button>
+      <p className={styles.counter}>{state}</p>
+      <button onClick={() => setState(state + 1)}> + </button>
     </div>
   );
   return [Contador];
