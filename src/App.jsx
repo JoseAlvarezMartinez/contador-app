@@ -3,6 +3,7 @@ import Montania from "./assets/pattern-hills.svg";
 import { useEffect, useState } from "react";
 function App() {
   const [date, setDate] = useState(new Date());
+
   useEffect(() => {
     setInterval(() => {
       setDate(new Date());

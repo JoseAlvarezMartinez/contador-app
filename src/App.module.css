@@ -32,6 +32,7 @@ h1 {
   text-align: center;
 }
 .hourCard {
+  max-width: 20rem;
   background-color: hsla(235, 18%, 12%, 0.76);
   width: 80%;
 }
