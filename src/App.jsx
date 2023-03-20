@@ -33,7 +33,7 @@ function App() {
         />
       </div>
       <div onClick={() => setModal(true)} className={styles.addBtn}>
-        <p>+</p>
+        +
       </div>
       {modal && <Modal setModal={setModal}/>}
     </header>

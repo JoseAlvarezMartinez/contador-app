@@ -39,10 +39,14 @@ h1 {
 .addBtn {
   height: 2rem;
   width: 2rem;
-  background: red;
+  background: #fff;
   position: relative;
   bottom: 2rem;
   left: 25rem;
   border-radius: 50%;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+

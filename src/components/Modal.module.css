@@ -1,13 +1,22 @@
-.modal{
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.8);
-    top: 0;
-
+.modal {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
 }
-.closeBtn{
-    background-color: #fff;
-    width: 5rem;
-    height: 5rem;
+.closeBtn {
+  background-color: #fff;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  left: 25rem;
+  top: 2rem;
+
+  cursor: pointer;
 }
