@@ -31,10 +31,12 @@ function App() {
           alt="Imagen de la Montania"
         />
       </div>
-      <div onClick={() => setModal(true)} className={styles.addBtn}>
-        +
+      <div className={styles.addBtnContainer}>
+        <div onClick={() => setModal(true)} className={styles.addBtn}>
+          +
+        </div>
       </div>
-      {modal && <Modal setModal={setModal}/>}
+      {modal && <Modal setModal={setModal} />}
     </header>
   );
 }
